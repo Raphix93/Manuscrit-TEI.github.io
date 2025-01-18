@@ -29,10 +29,40 @@ section.haut-page {
 /* Defini le titre principal des pages*/
 .grand-titre {
     color: rgb(59, 60, 61);
-    font-size: 80px;
+    font-size: 8vw; /* Utilise des unités relatives à la largeur de la fenêtre */
     font-family: Arial, Helvetica, sans-serif, cursive;
-    padding: 70px;
+    padding: 5vw; /* Utilise des unités relatives à la largeur de la fenêtre */
     position: absolute;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .grand-titre {
+        font-size: 7vw;
+        padding: 4vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .grand-titre {
+        font-size: 6vw;
+        padding: 3vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .grand-titre {
+        font-size: 5vw;
+        padding: 2vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .grand-titre {
+        font-size: 4vw;
+        padding: 1vw;
+    }
+}
 
 }
 /*mise en forme du bloc qui englobe toute la partie principale et l'encart de côté*/
@@ -71,6 +101,9 @@ nav {
     text-align: center;
     /* le texte est centré*/
     margin-top: 360px;
+    position: sticky; /* Fixe la barre de navigation en haut lors du défilement */
+    top: 0; /* Positionne la barre en haut de la page */
+    z-index: 1000; /* Assure que la barre de navigation est au-dessus des autres éléments */
 }
 
 nav ul {
