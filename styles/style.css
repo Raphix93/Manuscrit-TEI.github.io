@@ -402,7 +402,22 @@ nav li a:hover,
     transform: scale(0.95);
 }
 
-
+.responsive-iframe {
+    position: relative;
+    width: 100%; /* L'iframe prendra toute la largeur disponible */
+    padding-top: 56.25%; /* Ratio 16:9 (100% / (16/9)) */
+  }
+  
+  .responsive-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centrer l'iframe */
+  }
 
 
 footer {
