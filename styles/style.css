@@ -333,42 +333,80 @@ nav li a:hover,
     padding: 0;          /* Supprime les espacements internes */
 }
 
+
+/* Conteneur de la page Word */
 .word-page {
     font-family: 'Times New Roman', Times, serif;
     background-color: white;
-    width: 17cm; /* Largeur A4 */
-    min-height: 29.7cm; /* Hauteur A4 */
-    padding: 2cm;
+    width: 80%; /* Par défaut, la largeur est un pourcentage de l'écran */
+    max-width: 21cm; /* Limite la largeur maximale à celle d'une feuille A4 */
+    aspect-ratio: 21 / 29.7; /* Maintient un ratio A4 */
+    padding: 2rem; /* Marges internes */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: 1px solid #ccc;
-    overflow: auto; /* Permet le défilement si le contenu dépasse */
+    text-align: justify; /* Aligne le texte justifié */
   }
   
+  /* Texte */
   .word-page h1 {
     font-size: 1.5em;
-    text-align: center;
+    text-align: center; /* Le titre reste centré */
     margin-bottom: 20px;
   }
   
   .word-page p {
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 1rem;
     margin-bottom: 1em;
+    text-align: justify; /* Assure que tous les paragraphes soient justifiés */
   }
-
-.word-page p {
-    color: #333;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-.word-page ul, .word-page ol {
-    margin-left: 20px;
-    margin-bottom: 15px;
-}
-.word-page ul li, .word-page ol li {
-    margin-bottom: 5px;
-}
+  
+  /* Responsivité */
+  @media (max-width: 1024px) {
+    .word-page {
+      width: 90%; /* Réduit la largeur pour les écrans plus petits */
+      padding: 1.5rem; /* Réduit les marges internes */
+    }
+  
+    .word-page h1 {
+      font-size: 1.3em; /* Ajuste la taille des titres */
+    }
+  
+    .word-page p {
+      font-size: 0.95rem; /* Ajuste la taille du texte */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .word-page {
+      width: 95%; /* S'adapte à presque toute la largeur de l'écran */
+      padding: 1rem; /* Marges internes réduites */
+    }
+  
+    .word-page h1 {
+      font-size: 1.2em; /* Réduction supplémentaire */
+    }
+  
+    .word-page p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .word-page {
+      width: 100%; /* Occupe toute la largeur disponible */
+      height: auto; /* La hauteur s'ajuste automatiquement */
+      padding: 0.8rem; /* Marges internes adaptées */
+    }
+  
+    .word-page h1 {
+      font-size: 1em;
+    }
+  
+    .word-page p {
+      font-size: 0.85rem;
+    }
+  }
 
 .download-button {
     background-color: #ba3333;
