@@ -64,7 +64,6 @@ section.haut-page {
     }
 }
 
-}
 /*mise en forme du bloc qui englobe toute la partie principale et l'encart de côté*/
 #bloc_page {
     width: 100%;
@@ -334,26 +333,29 @@ nav li a:hover,
     padding: 0;          /* Supprime les espacements internes */
 }
 
-
-
-
-
 .word-page {
     font-family: 'Times New Roman', Times, serif;
-    background-color: #fff;
+    background-color: white;
+    width: 17cm; /* Largeur A4 */
+    min-height: 29.7cm; /* Hauteur A4 */
+    padding: 2cm;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px;
-    max-width: 800px;
-    width: 100%;
-    box-sizing: border-box;
-}
-.word-page h1, .word-page h2, .word-page h3 {
-    color: #333;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
+    overflow: auto; /* Permet le défilement si le contenu dépasse */
+  }
+  
+  .word-page h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .word-page p {
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 1em;
+  }
+
 .word-page p {
     color: #333;
     line-height: 1.6;
