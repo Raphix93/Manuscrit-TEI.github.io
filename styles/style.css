@@ -340,7 +340,6 @@ nav li a:hover,
     background-color: white;
     width: 80%; /* Par défaut, la largeur est un pourcentage de l'écran */
     max-width: 21cm; /* Limite la largeur maximale à celle d'une feuille A4 */
-    aspect-ratio: 21 / 29.7; /* Maintient un ratio A4 */
     padding: 2rem; /* Marges internes */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: 1px solid #ccc;
