@@ -27,31 +27,6 @@ section.haut-page {
     width:100%;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 1200px) {
-    section.haut-page {
-        height: 70vh;
-    }
-}
-
-@media (max-width: 992px) {
-    section.haut-page {
-        height: 65vh;
-    }
-}
-
-@media (max-width: 768px) {
-    section.haut-page {
-        height: 60vh;
-    }
-}
-
-@media (max-width: 576px) {
-    section.haut-page {
-        height: 55vh;
-    }
-}
-
 /* Defini le titre principal des pages*/
 .grand-titre {
     color: rgb(59, 60, 61);
