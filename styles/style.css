@@ -344,6 +344,7 @@ nav li a:hover,
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     border: 1px solid #ccc;
     text-align: justify; /* Aligne le texte justifié */
+    overflow: auto; /* Permet le défilement si nécessaire */
   }
   
   /* Texte */
